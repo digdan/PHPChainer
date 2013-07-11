@@ -31,10 +31,15 @@ class C {
 		return new static;
 	}
 	
-	public function extract($name) {
+	public function fetch($name) {
 		if (is_object(self::$register[$name])) {
 			return self::$registery[$name];
 		}
+	}
+	
+	public function run($function) {
+		$function();
+		return new static;
 	}
 }
 ?>
