@@ -30,5 +30,11 @@ class C {
 		}
 		return new static;
 	}
+	
+	public function extract($name) {
+		if (is_object(self::$register[$name])) {
+			return self::$registery[$name];
+		}
+	}
 }
 ?>
