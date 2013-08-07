@@ -52,8 +52,7 @@ $f = new fruit();
 $a = new apple();
 $gs = new grannysmith();
 
-C::chain()->
-	register($f,"fruit")->
+C::register($f,"fruit")->
 	description()->
 	register($a,"apple")->
 	description()->
